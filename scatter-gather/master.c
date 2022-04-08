@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
-    long int tab_size = 99999999;
+    long int tab_size = 64000000000;
     int sub_size = tab_size / (size - 1);
 
     int *tab = (int *)malloc(tab_size * sizeof(int));
